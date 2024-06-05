@@ -9,11 +9,8 @@ eg：tailwind.config.cjs(module.exports)
 ## plugins
 
 class-variance-authority 
-
- Avoiding the hassle of copying a large number of CSS files in React projects makes web development faster and more efficient.
-
+  避免了在 React 项目中复制大量 CSS 文件的麻烦，使网页开发变得更加迅速高效。
   eg:
-
   ```ts
   export const Button = ({
   variant = "primary",
@@ -49,32 +46,31 @@ class-variance-authority
   );
 };
   ```
-## Component library ui
-If you feel that the default UI is not very suitable to provide 
-  manager.js => .storybook/manager.js
+## 组件库ui
+如果你觉得默认的ui不是很合适 提供了 manager.js => .storybook/manager.js
 
-## Private Warehouse Deployment
+## 私仓部署
 verdaccio
 
-##  management tool => menorepo 
+## menorepo 管理工具
 1. lerna
 2. turbo
 3. rush
 
-### Advantages of menorepo
-1. Code reuse: public configuration eslint prettier babel ts webpack
-2. Dependency management
-    workspace：npm8+ yarn pnpm 
-3. Unified development environment
-nodejs nvm
-4. Micro front-end webpack mouse federation: Check if isolation is required
+### menorepo 优势
+  1.  代码复用：公共配置 eslint prettier babel ts webpack
+  2.  依赖管理
+      workspace：npm8+ yarn pnpm 
+  3.  统一的开发环境
+      nodejs nvm
+  4.  微前端 webpack moudle federation：看是否需要隔离
 
-### install lerna
-1. pnpm i lerna -D 
-2. Root directory creation file write pnpm workspac
-3. Rewrite the root directory src to=>packages
+### 安装 lerna
+1 pnpm i lerna -D 
+2 根目录创建文件 pnpm-workspace 写入
+3 根目录 src 改写成=》packages
 
 ### pnpm workspace
-Install the root directory global plugin  **pnpm i xxx - w**
-Uninstall  **pnpm remove xx**
-Install to the corresponding sub package  **pnpm i class variant authority filter components**
+安装根目录 全局插件 pnpm i xxx -w
+卸载 pnpm remove xx
+安装到对应子包 pnpm i class-variance-authority --filter components 
