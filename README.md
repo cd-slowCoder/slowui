@@ -6,6 +6,15 @@ This template provides a minimal setup to get React working in Vite with HMR and
 Configuration file use commandjs add cjs to file suffix
 eg：tailwind.config.cjs(module.exports)
 
+## environment
+
+node v20.12.1
+
+pnpm 9.1.4
+
+
+
+
 ## plugins
 
 class-variance-authority 
